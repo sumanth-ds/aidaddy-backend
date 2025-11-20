@@ -42,9 +42,9 @@ class User(UserMixin):
 def load_user(user_id):
     return User(user_id)
 
-@app.route('/')
-def home():
-    return render_template('index.html')
+# @app.route('/')
+# def home():
+#     return render_template('index.html')
 
 @app.route('/demo')
 def demo():
@@ -334,3 +334,4 @@ if __name__ == '__main__':
         db.create_all()
 
     app.run(debug=True, host='0.0.0.0', port=5000)
+
